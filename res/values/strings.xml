@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">算术</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="option">以内的加减法</string>
+    <string name="next">下一个</string>
+    <string name="question">题目</string>
+    <string name="math10">10以内加减法</string>
+    <string name="math20">20以内加减法</string>
+    <string name="math50">50以内加减法</string>
+    <string name="math100">100以内加减法</string>
+    <string name="ans">选项</string>
+
+</resources>

@@ -38,27 +38,28 @@ public class QuesActivity extends Activity {
 	
 	private void next(Integer option) {
 		TextView tv3 =  (TextView)findViewById(R.id.textView3);
-		TextView tv5 =  (TextView)findViewById(R.id.textView5);
-		TextView tv6 =  (TextView)findViewById(R.id.textView6);
-		TextView tv7 =  (TextView)findViewById(R.id.textView7);
+		final Button b2 =  (Button)findViewById(R.id.button2);
+		final Button b3 =  (Button)findViewById(R.id.button3);
+		final Button b4 =  (Button)findViewById(R.id.button4);
 				
-		Maths m = Maths.newMath(option);
+		final Maths m = Maths.newMath(option);
 		
-		tv3.setText(m.getA() + "  " + m.getSign() + "  " + m.getB());
+		tv3.setText("  " + m.getA() + "  " + m.getSign() + "  " + m.getB());
 		Random random = new Random();
 		int i = random.nextInt(3);
 		if (i == 0) {
-			tv5.setText(String.valueOf(m.getC()));
-			tv6.setText(String.valueOf(m.getC() - 1));
-			tv7.setText(String.valueOf(m.getC() + 1));
+			b2.setText(String.valueOf(m.getC()));
+			b3.setText(String.valueOf(m.getC() - 1));
+			b4.setText(String.valueOf(m.getC() + 1));
 		} else if (i == 1) {
-			tv6.setText(String.valueOf(m.getC()));
-			tv5.setText(String.valueOf(m.getC() - 1));
-			tv7.setText(String.valueOf(m.getC() + 1));
+			b3.setText(String.valueOf(m.getC()));
+			b2.setText(String.valueOf(m.getC() - 1));
+			b4.setText(String.valueOf(m.getC() + 1));
 		} else {
-			tv7.setText(String.valueOf(m.getC()));
-			tv5.setText(String.valueOf(m.getC() - 1));
-			tv6.setText(String.valueOf(m.getC() + 1));
+			b4.setText(String.valueOf(m.getC()));
+			b2.setText(String.valueOf(m.getC() - 1));
+			b3.setText(String.valueOf(m.getC() + 1));
 		}
+
 	}
 }
